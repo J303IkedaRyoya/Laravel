@@ -1,4 +1,5 @@
 <?php
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,13 +12,5 @@
 */
 
 Route::get('/', function () {
-    return 'Hello World';
-});
-
-Route::match(['get', 'post'], '/', function(){
-	//
-});
-
-Route::any('foo', function() {
-	//
+    return view('welcome');
 });
